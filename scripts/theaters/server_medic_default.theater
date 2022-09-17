@@ -1,0 +1,1540 @@
+"#base" "server_base_player.theater"
+"#base" "server_default_gear.theater"
+"#base" "server_default_weapon.theater"
+"#base" "server_default_weapon_upgrades.theater"
+"#base" "server_custom_cost.theater"
+"#base" "server_custom_weapon.theater"
+"#base" "server_weapon_mods.theater"
+"theater"
+{
+	"core"
+	{
+		"precache"
+		{
+			// default theater specific sounds
+			"sounds"			"scripts/custom_sounds.txt"
+			"sounds"			"scripts/ins_sounds_weapons.txt"
+			"sounds"			"scripts/ins_sounds_cues.txt"
+			"sounds"			"scripts/ins_sounds_voice.txt"
+			"sounds"			"scripts/ins_sounds_radial_security.txt"				
+			"sounds"			"scripts/ins_sounds_radial_insurgent.txt"			
+			"sounds"			"scripts/ins_sounds_responses_security.txt"
+			"sounds"			"scripts/ins_sounds_responses_insurgent.txt"
+			"sounds"			"scripts/ins_sounds_hq.txt"
+			"sounds"			"scripts/ins_sounds_voice_coop.txt"					
+			"sounds"			"scripts/angrybots_sounds.txt"
+			"localize"			"resource/ui/angrybots_english.txt"
+		}
+		// use this to register any acts not registered by the game DLL
+		// "activities"
+		// {
+		// "act"                "ACT_VM_SOMETHING"
+		// }
+	}
+	"teams"
+	{
+		"security"
+		{
+			"name"					"#Team_Security"
+			"logo"					"gameui/fac_sec"
+		}
+		"insurgents"
+		{
+			"name"					"#Team_Insurgent"
+			"logo"					"gameui/fac_ins"
+		}
+	}
+	"player_templates"
+	{
+		"template_designated_marksman_security_coop"
+		{
+			"team"					"security"
+			"print_name"				"#Squad_Fireteam_designated_marksman"
+			"models"
+			{
+				"player"				"models/characters/security_light.mdl"
+				"viewmodel_hands"			"models/weapons/v_hands_sec_h.mdl"
+				"bodygroups"
+				{
+					"kit"					"0"
+					"backpack"				"0"
+				}
+			}
+			"buy_order"
+			{
+				"weapon"				"weapon_kabar"
+				"gear"					"sec_light_armor"
+			}
+			"allowed_items"
+			{
+				// ========================================
+				// DEFIB & MED KITS
+				// ========================================
+				// "weapon"				"weapon_defib"
+				"weapon"				"weapon_geballteladung"
+				"weapon"				"weapon_m79"    
+				"weapon"				"weapon_m79_smoke"    
+				"weapon"				"weapon_law"
+				// ========================================
+				// ROCKETS
+				// ========================================
+				// "weapon"				"weapon_rpg7"
+				"weapon"				"weapon_at4"
+				// "weapon"				"weapon_rifle_grenade"
+				// "weapon"				"weapon_m203_he"
+				"weapon"				"weapon_m26a2"
+				// "weapon"				"weapon_gp25_he"
+				// "weapon"				"weapon_m203_smoke"
+				// "weapon"				"weapon_gp25_smoke"
+				// ========================================
+				// REMOTE CONTROLLED EXPLOSIVES
+				// ========================================
+				"weapon"				"weapon_c4_clicker"
+				// "weapon"				"weapon_c4_ied"
+				// ========================================
+				// GRENADES
+				// ========================================
+				"weapon"				"weapon_m67"
+				// "weapon"				"weapon_f1"
+				"weapon"				"weapon_anm14"
+				// "weapon"				"weapon_molotov"
+				"weapon"				"weapon_m18"
+				// "weapon"				"weapon_m84"
+				// ========================================
+				// SNIPER RIFLES
+				// ========================================	
+				"weapon"				"weapon_m40a1"
+				"weapon"				"weapon_mosin"
+				// ========================================
+				// 						CUSTOM SNIPER AND BOLT ACTION RIFLES
+				// ========================================
+				"weapon"				"weapon_kar98"
+				"weapon"				"weapon_m82a1"
+				"weapon"				"weapon_enfield"
+				"weapon"				"weapon_remingtonmsr"
+				"weapon"				"weapon_svd"
+				"weapon"				"weapon_gol"
+				// ========================================
+				// LIGHT MACHINE GUNS
+				// ========================================
+				// "weapon"				"weapon_m249"
+				// "weapon"				"weapon_rpk"
+				// ========================================
+				// 						CUSTOM LMG
+				// ========================================
+				// "weapon"				"weapon_mg42"
+				// "weapon"				"weapon_m1918bar"
+				// "weapon"				"weapon_mk46"
+				// "weapon"				"weapon_m60"
+				// "weapon"				"weapon_pecheneg"
+				// "weapon"				"weapon_m240"
+				// "weapon"				"weapon_stoner"
+				// ========================================
+				// ASSAULT RIFLES
+				// ========================================
+				// "weapon"				"weapon_m16a4"
+				// "weapon"				"weapon_mk18"
+				// "weapon"				"weapon_m4a1"
+				// "weapon"				"weapon_galil_sar"
+				// "weapon"				"weapon_akm"
+				// "weapon"				"weapon_ak74"
+				"weapon"				"weapon_fal"
+				"weapon"				"weapon_l1a1"
+				// ========================================
+				// 						CUSTOM ASSAULT RIFLES
+				// ========================================
+				// "weapon"				"weapon_mk17"
+				// "weapon"				"weapon_l85a2"
+				// "weapon"				"weapon_f2000"
+				// "weapon"				"weapon_steyraug"
+				// "weapon"				"weapon_asval"
+				// "weapon"				"weapon_m4a1sopmod"
+				"weapon"				"weapon_sr25"
+				// "weapon"				"weapon_mk18_m0"
+				// "weapon"				"weapon_cm901"
+				// "weapon"				"weapon_stg44"
+				"weapon"				"weapon_hk417"
+				// "weapon"				"weapon_honeybadger"
+				// "weapon"				"weapon_g33"
+				// "weapon"				"weapon_acr"
+				// "weapon"				"weapon_g36k"
+				// "weapon"				"weapon_hk416d"
+				// "weapon"				"weapon_alphaak"
+				// ========================================
+				// SEMI-AUTOMATIC RIFLES AND CARBINES
+				// ========================================
+				"weapon"				"weapon_mini14"
+				"weapon"				"weapon_m14"
+				"weapon"				"weapon_m1a1"
+				"weapon"				"weapon_sks"
+				// ========================================
+				// 						CUSTOM SEMI-AUTO RIFLES
+				// ========================================
+				"weapon"				"weapon_dragunovsvu"
+				"weapon"				"weapon_m1asocom16"
+				"weapon"				"weapon_m1garand"
+				"weapon"				"weapon_g43"
+				"weapon"				"weapon_m110"
+				"weapon"				"weapon_ace52"
+				// ========================================
+				// PISTOLS
+				// ========================================	
+				"weapon"				"weapon_m9"
+				"weapon"				"weapon_makarov"
+				// ========================================
+				// 						CUSTOM PISTOLS
+				// ========================================
+				"weapon"				"weapon_unica"
+				"weapon"				"weapon_mp443"
+				"weapon"				"weapon_m45seriespistol"
+				"weapon"				"weapon_m1911seriespistol"
+				"weapon"				"weapon_sigp220"
+				"weapon"				"weapon_beretta93r"
+				"weapon"				"weapon_combatcommander"
+				"weapon"				"weapon_glock33"
+				"weapon"				"weapon_fiveseven"
+				"weapon"				"weapon_cobra"
+				"weapon"				"weapon_deagle"
+				"weapon"				"weapon_glock18"
+				"weapon"				"weapon_glock17"
+				"weapon"				"weapon_hkusp"
+				"weapon"				"weapon_taurusjudge"
+				// ========================================
+				// SHOTGUNS
+				// ========================================
+				// "weapon"				"weapon_m590"
+				// "weapon"				"weapon_toz"
+				// ========================================
+				// 						CUSTOM SHOTGUNS
+				// ========================================
+				// "weapon"				"weapon_saiga12auto"
+				// "weapon"				"weapon_m500"
+				// "weapon"				"weapon_nova"
+				// "weapon"				"weapon_ksg"
+				"weapon"				"weapon_mc255"
+				// "weapon"				"weapon_typhoon12"
+				// ========================================
+				// SUB-MACHINE GUNS
+				// ========================================
+				"weapon"				"weapon_mp5"
+				"weapon"				"weapon_mp40"
+				"weapon"				"weapon_sterling"
+				"weapon"				"weapon_ump45"
+				"weapon"				"weapon_aks74u"
+				// ========================================
+				// 						CUSTOM SUBMACHINE GUNS
+				// ========================================
+				"weapon"				"weapon_sten"
+				"weapon"				"weapon_p90"
+				"weapon"				"weapon_spectre"
+				"weapon"				"weapon_krissvector"
+				"weapon"				"weapon_ppsh41"
+				"weapon"				"weapon_thompson"
+				"weapon"				"weapon_ots33"
+				"weapon"				"weapon_mp7"
+				"weapon"				"weapon_uzi"
+				"weapon"				"weapon_colt9mm"
+				// ========================================
+				// gear
+				// ========================================
+				"gear"					"sec_light_armor"
+				"gear"					"sec_heavy_armor"
+				"gear"					"sec_super_armor"
+				"gear"					"sec_medic_armor"
+				"gear"					"sec_chest_rig"
+				"gear"					"sec_chest_carrier"
+				"gear"					"sec_tactical_carrier"
+				"gear"					"sec_medic_tactical_carrier"
+				"gear"					"primary_sling"
+				"gear"					"secondary_sling"
+			}
+		}
+		"template_support_security_coop"
+		{
+			"team"					"security"
+			"print_name"				"#Squad_Fireteam_Support"
+			"models"
+			{
+				"player"				"models/characters/security_light.mdl"
+				"viewmodel_hands"		"models/weapons/v_hands_sec_h.mdl"
+				"bodygroups"
+				{
+					"kit"					"0"
+					"backpack"				"0"
+				}
+			}	
+			"buy_order"
+			{
+				"weapon"				"weapon_kabar"
+				"gear"					"sec_light_armor"
+			}
+			"allowed_items"
+			{
+				// ========================================
+				// DEFIB & MED KITS
+				// ========================================
+				// "weapon"				"weapon_defib"
+				"weapon"				"weapon_geballteladung"
+				"weapon"				"weapon_m79"    
+				"weapon"				"weapon_m79_smoke"    
+				"weapon"				"weapon_law"
+				// ========================================
+				// ROCKETS
+				// ========================================
+				// "weapon"				"weapon_rpg7"
+				"weapon"				"weapon_at4"
+				// "weapon"				"weapon_rifle_grenade"
+				// "weapon"				"weapon_m203_he"
+				"weapon"				"weapon_m26a2"
+				// "weapon"				"weapon_gp25_he"
+				// "weapon"				"weapon_m203_smoke"
+				// "weapon"				"weapon_gp25_smoke"
+				// ========================================
+				// REMOTE CONTROLLED EXPLOSIVES
+				// ========================================
+				"weapon"				"weapon_c4_clicker"
+				// "weapon"				"weapon_c4_ied"
+				// ========================================
+				// GRENADES
+				// ========================================
+				"weapon"				"weapon_m67"
+				// "weapon"				"weapon_f1"
+				"weapon"				"weapon_anm14"
+				// "weapon"				"weapon_molotov"
+				"weapon"				"weapon_m18"
+				// "weapon"				"weapon_m84"
+				// ========================================
+				// SNIPER RIFLES
+				// ========================================	
+				// "weapon"				"weapon_m40a1"
+				// "weapon"				"weapon_mosin"
+				// ========================================
+				// 						CUSTOM SNIPER AND BOLT ACTION RIFLES
+				// ========================================
+				// "weapon"				"weapon_kar98"
+				// "weapon"				"weapon_m82a1"
+				// "weapon"				"weapon_enfield"
+				// "weapon"				"weapon_remingtonmsr"
+				// "weapon"				"weapon_svd"
+				// "weapon"				"weapon_gol"
+				// ========================================
+				// LIGHT MACHINE GUNS
+				// ========================================
+				"weapon"				"weapon_m249"
+				"weapon"				"weapon_rpk"
+				// ========================================
+				// 						CUSTOM LMG
+				// ========================================
+				"weapon"				"weapon_mg42"
+				// "weapon"				"weapon_m1918bar"
+				"weapon"				"weapon_mk46"
+				"weapon"				"weapon_m60"
+				"weapon"				"weapon_pecheneg"
+				"weapon"				"weapon_m240"
+				"weapon"               	"weapon_stoner"
+				"weapon"				"weapon_m1919"
+				// ========================================
+				// ASSAULT RIFLES
+				// ========================================
+				// "weapon"				"weapon_m16a4"
+				// "weapon"				"weapon_mk18"
+				// "weapon"				"weapon_m4a1"
+				// "weapon"				"weapon_galil_sar"
+				// "weapon"				"weapon_akm"
+				// "weapon"				"weapon_ak74"
+				// "weapon"				"weapon_fal"
+				// "weapon"				"weapon_l1a1"
+				// ========================================
+				// 						CUSTOM ASSAULT RIFLES
+				// ========================================
+				// "weapon"				"weapon_mk17"
+				// "weapon"				"weapon_l85a2"
+				// "weapon"				"weapon_f2000"
+				// "weapon"				"weapon_steyraug"
+				// "weapon"				"weapon_asval"
+				// "weapon"				"weapon_m4a1sopmod"
+				// "weapon"				"weapon_sr25"
+				// "weapon"				"weapon_mk18_m0"
+				// "weapon"				"weapon_cm901"
+				// "weapon"				"weapon_stg44"
+				// "weapon"				"weapon_hk417"
+				// "weapon"				"weapon_honeybadger"
+				// "weapon"				"weapon_g33"
+				// "weapon"				"weapon_acr"
+				// "weapon"				"weapon_g36k"
+				// "weapon"				"weapon_hk416d"
+				// "weapon"				"weapon_alphaak"
+				// ========================================
+				// SEMI-AUTOMATIC RIFLES AND CARBINES
+				// ========================================
+				// "weapon"				"weapon_mini14"
+				// "weapon"				"weapon_m14"
+				// "weapon"				"weapon_m1a1"
+				// "weapon"				"weapon_sks"
+				// ========================================
+				// 						CUSTOM SEMI-AUTO RIFLES
+				// ========================================
+				// "weapon"				"weapon_dragunovsvu"
+				// "weapon"				"weapon_m1asocom16"
+				// "weapon"				"weapon_m1garand"
+				// "weapon"				"weapon_m110"
+				// "weapon"				"weapon_ace52"
+				// ========================================
+				// PISTOLS
+				// ========================================	
+				"weapon"				"weapon_m9"
+				"weapon"				"weapon_makarov"
+				// ========================================
+				// 						CUSTOM PISTOLS
+				// ========================================
+				"weapon"				"weapon_unica"
+				"weapon"				"weapon_mp443"
+				"weapon"				"weapon_m45seriespistol"
+				"weapon"				"weapon_m1911seriespistol"
+				"weapon"				"weapon_sigp220"
+				"weapon"				"weapon_beretta93r"
+				"weapon"				"weapon_combatcommander"
+				"weapon"				"weapon_glock33"
+				"weapon"				"weapon_fiveseven"
+				"weapon"				"weapon_cobra"
+				"weapon"				"weapon_deagle"
+				"weapon"				"weapon_glock18"
+				"weapon"				"weapon_glock17"
+				"weapon"				"weapon_hkusp"
+				"weapon"				"weapon_taurusjudge"
+				// ========================================
+				// SHOTGUNS
+				// ========================================
+				// "weapon"				"weapon_m590"
+				// "weapon"				"weapon_toz"
+				// ========================================
+				// 						CUSTOM SHOTGUNS
+				// ========================================
+				// "weapon"				"weapon_saiga12auto"
+				// "weapon"				"weapon_m500"
+				// "weapon"				"weapon_nova"
+				// "weapon"				"weapon_ksg"
+				"weapon"				"weapon_mc255"
+				// "weapon"				"weapon_typhoon12"
+				// ========================================
+				// SUB-MACHINE GUNS
+				// ========================================
+				"weapon"				"weapon_mp5"
+				"weapon"				"weapon_mp40"
+				"weapon"				"weapon_sterling"
+				"weapon"				"weapon_ump45"
+				"weapon"				"weapon_aks74u"
+				// ========================================
+				// 						CUSTOM SUBMACHINE GUNS
+				// ========================================
+				"weapon"				"weapon_sten"
+				"weapon"				"weapon_p90"
+				"weapon"				"weapon_spectre"
+				"weapon"				"weapon_krissvector"
+				"weapon"				"weapon_ppsh41"
+				"weapon"				"weapon_thompson"
+				"weapon"				"weapon_ots33"
+				"weapon"				"weapon_mp7"
+				"weapon"				"weapon_uzi"
+				"weapon"				"weapon_colt9mm"
+				// ========================================
+				// gear
+				// ========================================
+				"gear"					"sec_light_armor"
+				"gear"					"sec_heavy_armor"
+				"gear"					"sec_super_armor"
+				"gear"					"sec_medic_armor"
+				"gear"					"sec_chest_rig"
+				"gear"					"sec_chest_carrier"
+				"gear"					"sec_tactical_carrier"
+				"gear"					"sec_medic_tactical_carrier"
+				"gear"					"primary_sling"
+				"gear"					"secondary_sling"
+			}
+		}		
+		"template_infantryman_coop"
+		{
+			"team"					"security"
+			"print_name"				"#Squad_Fireteam_infantryman"
+			"models"
+			{
+				"player"				"models/characters/security_light.mdl"
+				"viewmodel_hands"		"models/weapons/v_hands_sec_h.mdl"
+				"bodygroups"
+				{
+					"kit"					"0"
+					"backpack"				"1"
+				}
+			}	
+			"buy_order"
+			{
+				"weapon"				"weapon_kabar"
+				"gear"					"sec_light_armor"
+			}
+			"allowed_items"
+			{
+				// ========================================
+				// DEFIB & MED KITS
+				// ========================================
+				// "weapon"				"weapon_defib"
+				"weapon"				"weapon_geballteladung"
+				"weapon"				"weapon_m79"
+				"weapon"				"weapon_m79_smoke"
+				"weapon"				"weapon_law"
+				// ========================================
+				// ROCKETS
+				// ========================================
+				// "weapon"				"weapon_rpg7"
+				"weapon"				"weapon_at4"
+				// "weapon"				"weapon_rifle_grenade"
+				// "weapon"				"weapon_m203_he"
+				"weapon"				"weapon_m26a2"
+				// "weapon"				"weapon_gp25_he"
+				// "weapon"				"weapon_m203_smoke"
+				// "weapon"				"weapon_gp25_smoke"
+				// ========================================
+				// REMOTE CONTROLLED EXPLOSIVES
+				// ========================================
+				"weapon"				"weapon_c4_clicker"
+				// "weapon"				"weapon_c4_ied"
+				// ========================================
+				// GRENADES
+				// ========================================
+				"weapon"				"weapon_m67"
+				// "weapon"				"weapon_f1"
+				"weapon"				"weapon_anm14"
+				// "weapon"				"weapon_molotov"
+				"weapon"				"weapon_m18"
+				// "weapon"				"weapon_m84"
+				// ========================================
+				// SNIPER RIFLES
+				// ========================================	
+				// "weapon"				"weapon_m40a1"
+				// "weapon"				"weapon_mosin"
+				// ========================================
+				// 						CUSTOM SNIPER AND BOLT ACTION RIFLES
+				// ========================================
+				// "weapon"				"weapon_kar98"
+				// "weapon"				"weapon_m82a1"
+				// "weapon"				"weapon_enfield"
+				// "weapon"				"weapon_remingtonmsr"
+				// "weapon"				"weapon_svd"
+				// "weapon"				"weapon_gol"
+				// ========================================
+				// LIGHT MACHINE GUNS
+				// ========================================
+				// "weapon"				"weapon_m249"
+				// "weapon"				"weapon_rpk"
+				// ========================================
+				// 						CUSTOM LMG
+				// ========================================
+				// "weapon"				"weapon_mg42"
+				"weapon"				"weapon_m1918bar"
+				// "weapon"				"weapon_mk46"
+				// "weapon"				"weapon_m60"
+				// "weapon"				"weapon_pecheneg"
+				// "weapon"				"weapon_m240"
+				// "weapon"               	"weapon_stoner"
+				// ========================================
+				// ASSAULT RIFLES
+				// ========================================
+				"weapon"				"weapon_m16a4"
+				"weapon"				"weapon_mk18"
+				"weapon"				"weapon_m4a1"
+				"weapon"				"weapon_galil_sar"
+				"weapon"				"weapon_akm"
+				"weapon"				"weapon_ak74"
+				// "weapon"				"weapon_fal"
+				// "weapon"				"weapon_l1a1"
+				// ========================================
+				// 						CUSTOM ASSAULT RIFLES
+				// ========================================
+				"weapon"				"weapon_mk17"
+				"weapon"				"weapon_l85a2"
+				"weapon"				"weapon_f2000"
+				"weapon"				"weapon_steyraug"
+				"weapon"				"weapon_asval"
+				"weapon"				"weapon_m4a1sopmod"
+				// "weapon"				"weapon_sr25"
+				"weapon"				"weapon_mk18_m0"
+				"weapon"				"weapon_cm901"
+				"weapon"				"weapon_stg44"
+				// "weapon"				"weapon_hk417"
+				"weapon"				"weapon_honeybadger"
+				// "weapon"				"weapon_g33"
+				"weapon"				"weapon_acr"
+				"weapon"				"weapon_g36k"
+				"weapon"				"weapon_an94"
+				"weapon"				"weapon_hk416d"
+				"weapon"				"weapon_alphaak"
+				// ========================================
+				// SEMI-AUTOMATIC RIFLES AND CARBINES
+				// ========================================
+				// "weapon"				"weapon_mini14"
+				// "weapon"				"weapon_m14"
+				// "weapon"				"weapon_m1a1"
+				// "weapon"				"weapon_sks"
+				// ========================================
+				// 						CUSTOM SEMI-AUTO RIFLES
+				// ========================================
+				// "weapon"				"weapon_dragunovsvu"
+				// "weapon"				"weapon_m1asocom16"
+				// "weapon"				"weapon_m1garand"
+				// "weapon"				"weapon_m110"
+				// "weapon"				"weapon_ace52"
+				// ========================================
+				// PISTOLS
+				// ========================================	
+				"weapon"				"weapon_m9"
+				"weapon"				"weapon_makarov"
+				// ========================================
+				// 						CUSTOM PISTOLS
+				// ========================================
+				"weapon"				"weapon_unica"
+				"weapon"				"weapon_mp443"
+				"weapon"				"weapon_m45seriespistol"
+				"weapon"				"weapon_m1911seriespistol"
+				"weapon"				"weapon_sigp220"
+				"weapon"				"weapon_beretta93r"
+				"weapon"				"weapon_combatcommander"
+				"weapon"				"weapon_glock33"
+				"weapon"				"weapon_fiveseven"
+				"weapon"				"weapon_cobra"
+				"weapon"				"weapon_deagle"
+				"weapon"				"weapon_glock18"
+				"weapon"				"weapon_glock17"
+				"weapon"				"weapon_hkusp"
+				"weapon"				"weapon_taurusjudge"
+				// ========================================
+				// SHOTGUNS
+				// ========================================
+				"weapon"				"weapon_m590"
+				"weapon"				"weapon_toz"
+				// ========================================
+				// 						CUSTOM SHOTGUNS
+				// ========================================
+				"weapon"				"weapon_saiga12auto"
+				"weapon"				"weapon_m500"
+				"weapon"				"weapon_nova"
+				"weapon"				"weapon_ksg"
+				"weapon"				"weapon_mc255"
+				"weapon"				"weapon_typhoon12"
+				// ========================================
+				// SUB-MACHINE GUNS
+				// ========================================
+				"weapon"				"weapon_mp5"
+				"weapon"				"weapon_mp40"
+				"weapon"				"weapon_sterling"
+				"weapon"				"weapon_ump45"
+				"weapon"				"weapon_aks74u"
+				// ========================================
+				// 						CUSTOM SUBMACHINE GUNS
+				// ========================================
+				"weapon"				"weapon_sten"
+				"weapon"				"weapon_p90"
+				"weapon"				"weapon_spectre"
+				"weapon"				"weapon_krissvector"
+				"weapon"				"weapon_ppsh41"
+				"weapon"				"weapon_thompson"
+				"weapon"				"weapon_ots33"
+				"weapon"				"weapon_mp7"
+				"weapon"				"weapon_uzi"
+				"weapon"				"weapon_colt9mm"
+				// ========================================
+				// gear
+				// ========================================
+				"gear"					"sec_light_armor"
+				"gear"					"sec_heavy_armor"
+				"gear"					"sec_super_armor"
+				"gear"					"sec_medic_armor"
+				"gear"					"sec_chest_rig"
+				"gear"					"sec_chest_carrier"
+				"gear"					"sec_tactical_carrier"
+				"gear"					"sec_medic_tactical_carrier"
+				"gear"					"primary_sling"
+				"gear"					"secondary_sling"
+			}
+		}
+		"template_Meat_Shield_security_coop"
+		{
+			"team"					"security"
+			"print_name"				"#Squad_Fireteam_Combat_Medic"
+			"models"
+			{
+				"player"		"models/characters/security_medic.mdl"
+				"viewmodel_hands"	"models/weapons/v_hands_med_h.mdl"
+				"bodygroups"
+				{
+					"kit"					"2"
+					"backpack"				"1"
+				}
+			}	
+			"buy_order"
+			{
+				"weapon"				"weapon_defib"
+				"gear"					"sec_medic_armor"
+			}
+			"allowed_items"
+			{
+				// ========================================
+				// DEFIB & MED KITS"
+				// ========================================
+				"weapon"				"weapon_defib"
+				// ========================================
+				// MELEE"
+				// ========================================
+				// "weapon"				"weapon_kabar"
+				// "weapon"				"weapon_gurkha"
+				// SPECIALITY / CUSTOM WEAPONS"
+				// "weapon"				"weapon_gravityknife"
+				// "weapon"				"weapon_brassknuckles"
+				// ========================================
+				// ROCKETS"
+				// ========================================
+				// "weapon"				"weapon_rpg7"
+				// "weapon"				"weapon_at4"
+				// "weapon"				"weapon_rifle_grenade"
+				// "weapon"				"weapon_m203_he"
+				// "weapon"				"weapon_gp25_he"
+				// "weapon"				"weapon_m203_smoke"
+				// "weapon"				"weapon_gp25_smoke"
+				// ========================================
+				// REMOTE CONTROLLED EXPLOSIVES"
+				// ========================================
+				// "weapon"				"weapon_c4_clicker"
+				// "weapon"				"weapon_c4_ied"
+				// ========================================
+				// GRENADES"
+				// ========================================
+				// "weapon"				"weapon_m67"
+				// "weapon"				"weapon_f1"
+				// "weapon"				"weapon_anm14"
+				// "weapon"				"weapon_molotov"
+				"weapon"				"weapon_m18"
+				// "weapon"				"weapon_m84"
+				// "weapon"				"weapon_m26a2"
+				// ========================================
+				// CUSTOM EXPLOSIVES"
+				// ========================================
+				// "weapon"				"weapon_geballteladung"
+				// "weapon"				"weapon_m79"
+				"weapon"				"weapon_m79_smoke"
+				// "weapon"				"weapon_law"
+				// "weapon"				"weapon_bazooka"
+				// ========================================
+				// SNIPER RIFLES"
+				// ========================================
+				// "weapon"				"weapon_m40a1"
+				// "weapon"				"weapon_mosin"
+				// CUSTOM SNIPER AND BOLT ACTION RIFLES"
+				// "weapon"				"weapon_kar98"
+				// "weapon"				"weapon_m82a1"
+				// "weapon"				"weapon_enfield"
+				// "weapon"				"weapon_remingtonmsr"
+				// "weapon"				"weapon_svd"
+				// "weapon"				"weapon_gol"
+				// ========================================
+				// LIGHT MACHINE GUNS"
+				// ========================================
+				// "weapon"				"weapon_m249"
+				// "weapon"				"weapon_rpk"
+				// CUSTOM LMG"
+				// "weapon"				"weapon_m1918bar"
+				// "weapon"				"weapon_mk46"
+				// "weapon"				"weapon_m60"
+				// "weapon"				"weapon_pecheneg"
+				// "weapon"				"weapon_m240"
+				// "weapon"				"weapon_mg42"
+				// "weapon"              "weapon_stoner"
+				// ========================================
+				// ASSAULT RIFLES"
+				// ========================================
+				// "weapon"				"weapon_m16a4"
+				// "weapon"				"weapon_mk18"
+				// "weapon"				"weapon_m4a1"
+				// "weapon"				"weapon_galil_sar"
+				// "weapon"				"weapon_akm"
+				// "weapon"				"weapon_ak74"
+				// "weapon"				"weapon_fal"
+				// "weapon"				"weapon_l1a1"
+				// CUSTOM ASSAULT RIFLES"
+				// "weapon"				"weapon_mk17"
+				// "weapon"				"weapon_l85a2"
+				// "weapon"				"weapon_f2000"
+				// "weapon"				"weapon_steyraug"
+				// "weapon"				"weapon_asval"
+				// "weapon"				"weapon_m4a1sopmod"
+				// "weapon"				"weapon_sr25"
+				// "weapon"				"weapon_mk18_m0"
+				// "weapon"				"weapon_cm901"
+				// "weapon"				"weapon_stg44"
+				// "weapon"				"weapon_hk417"
+				// "weapon"				"weapon_honeybadger"
+				// "weapon"				"weapon_g33"
+				// "weapon"				"weapon_acr"
+				// "weapon"				"weapon_g36k"
+				// "weapon"				"weapon_hk416d"
+				// "weapon"				"weapon_alphaak"
+				// ========================================
+				// SEMI-AUTOMATIC RIFLES AND CARBINES"
+				// ========================================
+				// "weapon"				"weapon_mini14"
+				// "weapon"				"weapon_m14"
+				// "weapon"				"weapon_m1a1"
+				// "weapon"				"weapon_sks"
+				// CUSTOM SEMI-AUTO RIFLES"
+				// "weapon"				"weapon_m1asocom16"
+				// "weapon"				"weapon_m1garand"
+				// "weapon"				"weapon_m110"
+				// "weapon"				"weapon_ace52"
+				// ========================================
+				// PISTOLS"
+				// ========================================
+				"weapon"				"weapon_m9"
+				"weapon"				"weapon_makarov"
+				// CUSTOM PISTOLS"
+				"weapon"				"weapon_mp443"
+				"weapon"				"weapon_m45seriespistol"
+				"weapon"				"weapon_m1911seriespistol"
+				// "weapon"				"weapon_sigp220"
+				// "weapon"				"weapon_taurusjudge"
+				// "weapon"				"weapon_beretta93r"
+				"weapon"				"weapon_combatcommander"
+				// "weapon"				"weapon_glock33"
+				"weapon"				"weapon_fiveseven"
+				"weapon"				"weapon_cobra"
+				"weapon"				"weapon_unica"
+				// "weapon"				"weapon_deagle"
+				// "weapon"				"weapon_glock18"
+				"weapon"				"weapon_glock17"
+				"weapon"				"weapon_hkusp"
+				"weapon"				"weapon_taurusjudge"
+				// ========================================
+				// SHOTGUNS"
+				// ========================================
+				// "weapon"				"weapon_m590"
+				// "weapon"				"weapon_toz"
+				// CUSTOM SHOTGUNS"
+				// "weapon"				"weapon_saiga12auto"
+				// "weapon"				"weapon_m500"
+				// "weapon"				"weapon_nova"
+				// "weapon"				"weapon_ksg"
+				// "weapon"				"weapon_mc255"
+				// "weapon"				"weapon_typhoon12"
+				// ========================================
+				// SUB-MACHINE GUNS"
+				// ========================================
+				"weapon"				"weapon_mp5"
+				"weapon"				"weapon_mp40"
+				"weapon"				"weapon_sterling"
+				"weapon"				"weapon_ump45"
+				// "weapon"				"weapon_aks74u"
+				// CUSTOM SUBMACHINE GUNS"
+				"weapon"				"weapon_p90"
+				"weapon"				"weapon_spectre"
+				"weapon"				"weapon_krissvector"
+				"weapon"				"weapon_ppsh41"
+				"weapon"				"weapon_thompson"
+				"weapon"				"weapon_ots33"
+				"weapon"				"weapon_mp7"
+				"weapon"				"weapon_uzi"
+				"weapon"				"weapon_colt9mm"
+				// ========================================
+				// gear
+				// ========================================
+				// "gear"					"sec_light_armor"
+				// "gear"					"sec_heavy_armor"
+				//	"gear"					"sec_super_armor"
+				"gear" 					"sec_medic_armor"
+				"gear" 					"sec_chest_rig"
+				"gear" 					"sec_chest_carrier"
+				"gear" 					"sec_tactical_carrier"
+				"gear"					"sec_medic_tactical_carrier"
+				// "gear"					"primary_sling"
+				 "gear"					"secondary_sling"
+			}
+			"cost_modifiers"    // (Optional) Allows you to micromanage costs at the class level
+			{
+				"weapon"
+				{
+					"weapon_glock17" 	"+4"
+					"weapon_mp443" 	"+4"
+					"weapon_combatcommander" "+5"
+					"weapon_m1911seriespistol" "+5"
+					"weapon_m45seriespistol" "+5"
+					"weapon_hkusp" "+7"
+					"weapon_cobra" "+10"
+					"weapon_fiveseven" 	"+10"
+					"weapon_unica"		"+10"
+					"weapon_taurusjudge" "+10"
+					"weapon_ots33"	"+10"
+					"weapon_mp40"	"+14"
+					"weapon_ump45"	"+14"
+					"weapon_uzi" "+12"
+					"weapon_sterling" "+14"
+					"weapon_spectre"	"+17"
+					"weapon_mp5"	"+17"
+					"weapon_p90"	"+18"
+					"weapon_mp7"	"+20"
+					"weapon_krissvector" "+20"
+					"weapon_colt9mm" "+20"
+					"weapon_thompson" "+20"
+					"weapon_ppsh41" "+20"
+				}
+				"gear"
+				{
+					"sec_medic_armor" "-26"
+					"secondary_sling" "+2"
+				}
+			}
+		}	
+		"template_commander_coop"
+		{
+			"team"					"security"
+			"print_name"				"#Squad_Fireteam_Commander"
+			"models"
+			{
+				"player"				"models/characters/security_light.mdl"
+				"viewmodel_hands"		"models/weapons/v_hands_sec_h.mdl"
+				"bodygroups"
+				{
+					"kit"					"0"
+					"backpack"				"1"
+				}
+			}	
+			"buy_order"
+			{
+				"weapon"				"weapon_kabar"
+				"weapon"				"weapon_p2a1"
+				"gear"					"sec_light_armor"
+			}
+			"allowed_items"
+			{
+				// ========================================
+				// DEFIB & MED KITS
+				// ========================================
+				// "weapon"				"weapon_defib"
+				"weapon"				"weapon_geballteladung"
+				"weapon"				"weapon_m79"
+				"weapon"				"weapon_m79_smoke"
+				"weapon"				"weapon_law"
+				// ========================================
+				// ROCKETS
+				// ========================================
+				// "weapon"				"weapon_rpg7"
+				"weapon"				"weapon_at4"
+				// "weapon"				"weapon_rifle_grenade"
+				// "weapon"				"weapon_m203_he"
+				"weapon"				"weapon_m26a2"
+				// "weapon"				"weapon_gp25_he"
+				// "weapon"				"weapon_m203_smoke"
+				// "weapon"				"weapon_gp25_smoke"
+				// ========================================
+				// REMOTE CONTROLLED EXPLOSIVES
+				// ========================================
+				"weapon"				"weapon_c4_clicker"
+				// "weapon"				"weapon_c4_ied"
+				"weapon"				"weapon_p2a1"
+				// ========================================
+				// GRENADES
+				// ========================================
+				"weapon"				"weapon_m67"
+				// "weapon"				"weapon_f1"
+				"weapon"				"weapon_anm14"
+				// "weapon"				"weapon_molotov"
+				"weapon"				"weapon_m18"
+				// "weapon"				"weapon_m84"
+				// ========================================
+				// SNIPER RIFLES
+				// ========================================	
+				// "weapon"				"weapon_m40a1"
+				// "weapon"				"weapon_mosin"
+				// ========================================
+				// 						CUSTOM SNIPER AND BOLT ACTION RIFLES
+				// ========================================
+				// "weapon"				"weapon_kar98"
+				// "weapon"				"weapon_m82a1"
+				// "weapon"				"weapon_enfield"
+				// "weapon"				"weapon_remingtonmsr"
+				// "weapon"				"weapon_svd"
+				// "weapon"				"weapon_gol"
+				// ========================================
+				// LIGHT MACHINE GUNS
+				// ========================================
+				// "weapon"				"weapon_m249"
+				// "weapon"				"weapon_rpk"
+				// ========================================
+				// 						CUSTOM LMG
+				// ========================================
+				// "weapon"				"weapon_mg42"
+				"weapon"				"weapon_m1918bar"
+				// "weapon"				"weapon_mk46"
+				// "weapon"				"weapon_m60"
+				// "weapon"				"weapon_pecheneg"
+				// "weapon"				"weapon_m240"
+				// "weapon"              "weapon_stoner"
+				// ========================================
+				// ASSAULT RIFLES
+				// ========================================
+				"weapon"				"weapon_m16a4"
+				"weapon"				"weapon_mk18"
+				"weapon"				"weapon_m4a1"
+				"weapon"				"weapon_galil_sar"
+				"weapon"				"weapon_akm"
+				"weapon"				"weapon_ak74"
+				// "weapon"				"weapon_fal"
+				// "weapon"				"weapon_l1a1"
+				// ========================================
+				// 						CUSTOM ASSAULT RIFLES
+				// ========================================
+				"weapon"				"weapon_mk17"
+				"weapon"				"weapon_l85a2"
+				"weapon"				"weapon_f2000"
+				"weapon"				"weapon_steyraug"
+				"weapon"				"weapon_asval"
+				"weapon"				"weapon_m4a1sopmod"
+				// "weapon"				"weapon_sr25"
+				"weapon"				"weapon_mk18_m0"
+				"weapon"				"weapon_cm901"
+				"weapon"				"weapon_stg44"
+				// "weapon"				"weapon_hk417"
+				"weapon"				"weapon_honeybadger"
+				// "weapon"				"weapon_g33"
+				"weapon"				"weapon_acr"
+				"weapon"				"weapon_g36k"
+				"weapon"				"weapon_an94"
+				"weapon"				"weapon_hk416d"
+				"weapon"				"weapon_alphaak"
+				// ========================================
+				// SEMI-AUTOMATIC RIFLES AND CARBINES
+				// ========================================
+				// "weapon"				"weapon_mini14"
+				// "weapon"				"weapon_m14"
+				// "weapon"				"weapon_m1a1"
+				// "weapon"				"weapon_sks"
+				// ========================================
+				// 						CUSTOM SEMI-AUTO RIFLES
+				// ========================================
+				// "weapon"				"weapon_dragunovsvu"
+				// "weapon"				"weapon_m1asocom16"
+				// "weapon"				"weapon_m1garand"
+				// "weapon"				"weapon_m110"
+				// "weapon"				"weapon_ace52"
+				// ========================================
+				// PISTOLS
+				// ========================================	
+				"weapon"				"weapon_m9"
+				"weapon"				"weapon_makarov"
+				// ========================================
+				// 						CUSTOM PISTOLS
+				// ========================================
+				"weapon"				"weapon_unica"
+				"weapon"				"weapon_mp443"
+				"weapon"				"weapon_m45seriespistol"
+				"weapon"				"weapon_m1911seriespistol"
+				"weapon"				"weapon_sigp220"
+				"weapon"				"weapon_beretta93r"
+				"weapon"				"weapon_combatcommander"
+				"weapon"				"weapon_glock33"
+				"weapon"				"weapon_fiveseven"
+				"weapon"				"weapon_cobra"
+				"weapon"				"weapon_deagle"
+				"weapon"				"weapon_glock18"
+				"weapon"				"weapon_glock17"
+				"weapon"				"weapon_hkusp"
+				"weapon"				"weapon_taurusjudge"
+				// ========================================
+				// SHOTGUNS
+				// ========================================
+				"weapon"				"weapon_m590"
+				"weapon"				"weapon_toz"
+				// ========================================
+				// 						CUSTOM SHOTGUNS
+				// ========================================
+				"weapon"				"weapon_saiga12auto"
+				"weapon"				"weapon_m500"
+				"weapon"				"weapon_nova"
+				"weapon"				"weapon_ksg"
+				"weapon"				"weapon_mc255"
+				"weapon"				"weapon_typhoon12"
+				// ========================================
+				// SUB-MACHINE GUNS
+				// ========================================
+				"weapon"				"weapon_mp5"
+				"weapon"				"weapon_mp40"
+				"weapon"				"weapon_sterling"
+				"weapon"				"weapon_ump45"
+				"weapon"				"weapon_aks74u"
+				// ========================================
+				// 						CUSTOM SUBMACHINE GUNS
+				// ========================================
+				"weapon"				"weapon_sten"
+				"weapon"				"weapon_p90"
+				"weapon"				"weapon_spectre"
+				"weapon"				"weapon_krissvector"
+				"weapon"				"weapon_ppsh41"
+				"weapon"				"weapon_thompson"
+				"weapon"				"weapon_ots33"
+				"weapon"				"weapon_mp7"
+				"weapon"				"weapon_uzi"
+				"weapon"				"weapon_colt9mm"
+				// ========================================
+				// gear
+				// ========================================
+				"gear"					"sec_light_armor"
+				"gear"					"sec_heavy_armor"
+				"gear"					"sec_super_armor"
+				"gear"					"sec_medic_armor"
+				"gear"					"sec_chest_rig"
+				"gear"					"sec_chest_carrier"
+				"gear"					"sec_tactical_carrier"
+				"gear"					"sec_medic_tactical_carrier"
+				"gear"					"primary_sling"
+				"gear"					"secondary_sling"
+			}
+			"cost_modifiers"    // (Optional) Allows you to micromanage costs at the class level
+			{
+				"weapon"
+				{
+					"weapon_p2a1" 	"-1"
+				}
+			}
+		}	
+		// 
+		// BEGIN BOT CLASS TEMPLATES
+		// 
+		"template_coop_specialist" // "숙련병"
+		{
+			"team"					"security,insurgents"
+			"print_name"				"#Squad_Cell_Specialist"
+			"models"
+			{
+				"player"				"models/characters/insurgent_standard.mdl"
+				"viewmodel_hands"			"models/weapons/v_hands_ins_m.mdl"
+				"bodygoups"
+				{
+					"kit"					"0"
+					"backpack"				"0"
+				}
+			}
+			"buy_order"
+			{
+			  "gear"					"ins_heavy_armor"
+				"gear"					"ins_chest_carrier"
+				"weapon"				"weapon_kabar"
+				"weapon"				"weapon_makarov"
+				"weapon"				"weapon_aks74u"
+				"weapon_upgrade"		"ammo_tracer_aks74u"
+				"weapon_upgrade"		"ins_foregrip"
+				"weapon"				"weapon_molotov"
+				"weapon"				"weapon_f1"
+			}
+			"allowed_items"
+			{
+				"weapon"				"weapon_aks74u"
+			  "weapon"				"weapon_makarov"
+				"weapon"				"weapon_sks"
+				"weapon"				"weapon_molotov"
+				"weapon"				"weapon_f1"
+			}
+			"cost_modifiers"    // (Optional) Allows you to micromanage costs at the class level
+			{
+				"weapon"
+				{
+					"weapon_f1" "-1"
+					"weapon_rpg7" "-4"
+				}
+				"gear"
+				{
+				}
+			}
+		}
+		"template_coop_fighter" // "돌격병"
+		{
+			"team"					"security,insurgents"
+			"print_name"				"#Squad_Cell_Fighter"
+			"models"
+			{
+				"player"				"models/characters/insurgent_heavy.mdl"
+				"viewmodel_hands"			"models/weapons/v_hands_ins_h.mdl"
+				"bodygoups"
+				{
+					"kit"					"0"
+					"backpack"				"0"
+				}				
+				"attachments"	
+				{
+					"helmet"
+					{
+						"model"			"models/characters/ins_helmet_head.mdl"
+					}
+				}
+			}
+			"buy_order"
+			{
+				"gear"					"ins_heavy_armor"
+				"gear"					"ins_chest_carrier"
+				"weapon"				"weapon_kabar"
+				"weapon"				"weapon_ak74"
+				"weapon_upgrade"		"ammo_ap_ak74"
+				"weapon"				"weapon_f1"
+			}
+			"allowed_items"
+			{
+				"weapon"				"weapon_ak74"
+				"weapon"				"weapon_akm"
+				"weapon"				"weapon_molotov"
+				"weapon"				"weapon_m84"
+				"weapon"				"weapon_f1"
+			}
+			"cost_modifiers"    // (Optional) Allows you to micromanage costs at the class level
+			{
+				"weapon"
+				{
+					"weapon_f1" "-1"
+				}
+				"gear"
+				{
+				}
+			}
+		}
+		"template_coop_machinegunner" // "경기관총 사수"
+		{
+			"team"					"security,insurgents"
+			"print_name"				"#Squad_Cell_MachineGunner"
+			"models"
+			{
+				"player"				"models/characters/insurgent_heavy.mdl"
+				"viewmodel_hands"			"models/weapons/v_hands_ins_h.mdl"
+				"bodygoups"
+				{
+					"kit"					"0"
+					"backpack"				"0"
+				}				
+				"attachments"	
+				{
+					"helmet"
+					{
+						"model"			"models/characters/ins_helmet_head.mdl"
+					}
+				}
+			}
+			"buy_order"
+			{
+				"gear"					"ins_heavy_armor"
+				"gear"					"ins_chest_carrier"
+				"weapon"				"weapon_kabar"
+				"weapon"				"weapon_rpk"
+				"weapon_upgrade"		"ammo_ap_rpk"
+				"weapon"				"weapon_molotov"
+			}
+			"allowed_items"
+			{
+				"weapon"				"weapon_rpk"
+				"weapon"				"weapon_akm"
+				"weapon"				"weapon_molotov"
+			}
+			"cost_modifiers"    // (Optional) Allows you to micromanage costs at the class level
+			{
+				"weapon"
+				{
+					"weapon_f1" "-1"
+				}
+				"gear"
+				{
+				}
+			}
+		}
+		"template_coop_sapper" // "공병"
+		{
+			"team"					"security,insurgents"
+			"print_name"				"#Squad_Cell_Sapper"
+			"models"
+			{
+				"player"				"models/characters/insurgent_standard.mdl"
+				"viewmodel_hands"			"models/weapons/v_hands_ins_m.mdl"
+				"bodygoups"
+				{
+					"kit"					"0"
+					"backpack"				"0"
+				}				
+				"attachments"	
+				{
+					"helmet"
+					{
+						"model"			"models/characters/ins_helmet_head.mdl"
+					}
+				}
+			}
+			"buy_order"
+			{
+				"gear"					"ins_heavy_armor"
+				"gear"					"ins_chest_carrier"
+				"weapon"				"weapon_kabar"
+				"weapon_upgrade"		"ins_flashlight"
+				"weapon"				"weapon_makarov"
+				"weapon"				"weapon_rpg7"
+			}
+			"allowed_items"
+			{
+				"weapon"				"weapon_akm"
+				"weapon"				"weapon_makarov"
+				"weapon"				"weapon_rpg7"
+			}
+			"cost_modifiers"    // (Optional) Allows you to micromanage costs at the class level
+			{
+				"weapon"
+				{
+					"weapon_rpg7" "-6"
+					"weapon_c4_ied" "-4"
+					"weapon_molotov" "-4"
+					"weapon_f1" "-1"
+				}
+				"gear"
+				{
+				}
+			}
+		}
+		"template_coop_sharpshooter" // "특등사수"
+		{
+			"team"					"security,insurgents"
+			"print_name"				"#Squad_Cell_Sharpshooter"
+			"models"
+			{
+				"player"				"models/characters/insurgent_light.mdl"
+				"viewmodel_hands"			"models/weapons/v_hands_ins_l.mdl"
+				"bodygoups"
+				{
+					"kit"					"0"
+					"backpack"				"0"
+				}
+			}
+			"buy_order"
+			{
+				"gear"					"ins_light_armor"
+				"gear"					"ins_chest_carrier"
+				"weapon"				"weapon_kabar"
+				"weapon"				"weapon_mosin"
+				"weapon_upgrade"		"ammo_ap_mosin"
+				"weapon_upgrade"		"optic_scope_7x"
+				"weapon"				"weapon_molotov"
+			}
+			"allowed_items"
+			{
+				"weapon"				"weapon_mosin"
+				"weapon"				"weapon_molotov"
+			}
+			"cost_modifiers"    // (Optional) Allows you to micromanage costs at the class level
+			{
+				"weapon"
+				{
+					"weapon_molotov" "-4"
+					"weapon_rpg7" "-6"
+				}
+				"gear"
+				{
+				}
+			}
+		}
+		"template_coop_heavygunner" // "헤비거너"
+		{
+			"team"					"security,insurgents"
+			"print_name"				"#Squad_Cell_HeavyGunner"
+			"models"
+			{
+				"player"				"models/characters/insurgent_heavy.mdl"
+				"viewmodel_hands"			"models/weapons/v_hands_ins_h.mdl"
+				"bodygoups"
+				{
+					"kit"					"2"
+					"backpack"				"1"
+				}
+				"attachments"	
+				{
+					"helmet"
+					{
+						"model"			"models/characters/ins_helmet_head.mdl"
+					}
+				}				
+			}
+			"buy_order"
+			{
+				"gear"					"ins_heavy_armor"
+				"gear"					"ins_chest_carrier"
+				"weapon"				"weapon_kabar"
+				"weapon"				"weapon_rpk"
+				"weapon_upgrade"		"ammo_ap_rpk"
+				"weapon"				"weapon_f1"
+			}
+			"allowed_items"
+			{
+				"weapon"				"weapon_rpk"
+				"weapon"				"weapon_f1"
+			}
+			"cost_modifiers"    // (Optional) Allows you to micromanage costs at the class level
+			{
+				"weapon"
+				{
+					"weapon_f1" "-1"
+				}
+				"gear"
+				{
+				}
+			}
+		}		
+		"template_coop_submachinegunner" // "SMG Soldier"
+		{
+			"team"					"security,insurgents"
+			"print_name"				"#Squad_Cell_SubmachineGunner"
+			"models"
+			{
+				"player"				"models/characters/insurgent_light.mdl"
+				"viewmodel_hands"			"models/weapons/v_hands_ins_l.mdl"
+				"bodygoups"
+				{
+					"kit"					"0"
+					"backpack"				"0"
+				}				
+			}
+			"buy_order"
+			{
+				"gear"					"ins_light_armor"
+				"gear"					"ins_chest_carrier"
+				"weapon"				"weapon_kabar"
+				"weapon"				"weapon_akm"
+				"weapon_upgrade"		"ammo_hp_akm"
+				"weapon"				"weapon_f1"
+			}
+			"allowed_items"
+			{
+				"weapon"				"weapon_akm"
+				"weapon"				"weapon_f1"
+			}
+			"cost_modifiers"    // (Optional) Allows you to micromanage costs at the class level
+			{
+				"weapon"
+				{
+					"weapon_f1" "-1"
+				}
+				"gear"
+				{
+				}
+			}
+		}
+		"template_coop_suicide_bomber" // "suicide_bomber"
+		{
+			"team"					"security,insurgents"
+			"print_name"				"#Squad_Cell_suicide_bomber"
+			"models"
+			{
+				"player"				"models/characters/insurgent_light.mdl"
+				"viewmodel_hands"			"models/weapons/v_hands_ins_l.mdl"
+				"bodygoups"
+				{
+					"kit"					"0"
+					"backpack"				"0"
+				}				
+			}
+			"buy_order"
+			{
+				"gear"					"ins_light_armor"
+				"gear"					"ins_chest_carrier"
+				"weapon"				"weapon_kabar"
+			}
+			"allowed_items"
+			{
+				"weapon"				"weapon_kabar"
+			}
+			"cost_modifiers"    // (Optional) Allows you to micromanage costs at the class level
+			{
+				"weapon"
+				{
+				}
+				"gear"
+				{
+				}
+			}
+		}
+		"template_coop_brusier" // "brusier"
+		{
+			"team"					"security,insurgents"
+			"print_name"				"#Squad_Cell_Brusier"
+			"models"
+			{
+				"player"				"models/characters/insurgent_light.mdl"
+				"viewmodel_hands"			"models/weapons/v_hands_ins_l.mdl"
+				"bodygoups"
+				{
+					"kit"					"0"
+					"backpack"				"0"
+				}				
+			}
+			"buy_order"
+			{
+				"gear"					"ins_brusier_armor"
+				"gear"					"ins_chest_carrier"
+				"weapon"				"weapon_m1911seriespistol"
+				"weapon_upgrade"				"ammo_ap_m1911"
+			}
+			"allowed_items"
+			{
+				"weapon"				"weapon_kabar"
+				"weapon"				"weapon_m1911seriespistol"
+				"gear"					"ins_brusier_armor"
+			}
+			"cost_modifiers"    // (Optional) Allows you to micromanage costs at the class level
+			{
+				"weapon"
+				{
+				}
+				"gear"
+				{
+				}
+			}
+		}
+		"template_coop_assassin" // "공병"
+		{
+			"team"					"security,insurgents"
+			"print_name"				"#Squad_Cell_Assassin"
+			"models"
+			{
+				"player"				"models/characters/insurgent_standard.mdl"
+				"viewmodel_hands"			"models/weapons/v_hands_ins_m.mdl"
+				"bodygoups"
+				{
+					"kit"					"0"
+					"backpack"				"0"
+				}				
+				"attachments"	
+				{
+					"helmet"
+					{
+						"model"			"models/characters/ins_helmet_head.mdl"
+					}
+				}
+			}
+			"buy_order"
+			{
+				"gear"					"ins_heavy_armor"
+				"gear"					"ins_chest_carrier"
+				"weapon"				"weapon_kabar"
+				"weapon"				"weapon_rpg7"
+			}
+			"allowed_items"
+			{
+				"weapon"				"weapon_f1"
+				"weapon"				"weapon_rpg7"
+			}
+			"cost_modifiers"    // (Optional) Allows you to micromanage costs at the class level
+			{
+				"weapon"
+				{
+					"weapon_rpg7" "-6"
+				}
+				"gear"
+				{
+				}
+			}
+		}
+	}	
+}

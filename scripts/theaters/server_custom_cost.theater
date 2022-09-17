@@ -1,0 +1,976 @@
+"theater"
+{
+	"weapons"
+	{
+		// ========================================
+		// DEFIB & MED KITS
+		// ========================================
+		"weapon_defib"
+		{
+			// "weapon_slot"				"primary"
+			// "weapon_slot"				"secondary"
+			// "weapon_slot"				"explosive"
+			"weapon_slot"				"melee"
+			// "weapon_max_subslot"			"0"
+			// "weapon_min_subslot"			"0"
+			"class_restricted"			"1"
+			// "weapon_cost"				"5"
+		}
+		"weapon_p2a1"
+		{
+			// "weapon_slot"				"primary"
+			// "weapon_slot"				"secondary"
+			"weapon_slot"				"explosive"
+			// "weapon_slot"				"melee"
+			"weapon_max_subslot"			"0"
+			// "weapon_min_subslot"			"0"
+			"class_restricted"			"1"
+			// "weapon_cost"				"5"
+		}
+		// ========================================
+		// ROCKETS
+		// ========================================
+		"weapon_rpg7"
+		{
+			// "weapon_slot"				"primary"
+			// "weapon_slot"				"secondary"
+			"weapon_slot" 					"explosive"
+			// "weapon_slot" 				"melee"
+			// "weapon_max_subslot" 		"0"
+			// "weapon_min_subslot" 			"3"
+			"class_restricted" 				"1"
+			"weapon_cost" 					"6"
+		}
+		"weapon_at4"
+		{
+			// "weapon_slot"				"primary"
+			// "weapon_slot"				"secondary"
+			"weapon_slot"				"explosive"
+			// "weapon_slot"				"melee"
+			// "weapon_max_subslot"			"0"
+			"weapon_min_subslot"			"3"
+			"class_restricted"			"1"
+			"weapon_cost"				"6"
+		}
+		"weapon_rifle_grenade"
+		{
+			"weapon_slot"				"primary"
+			// "weapon_slot"				"secondary"
+			// "weapon_slot"				"explosive"
+			// "weapon_slot"				"melee"
+			// "weapon_max_subslot"			"0"
+			// "weapon_min_subslot"			"0"
+			// "class_restricted"			"1"
+			"weapon_cost"				"4"
+		}
+		"weapon_m203_he"
+		{
+			"weapon_slot"				"primary"
+			// "weapon_slot"				"secondary"
+			// "weapon_slot"				"explosive"
+			// "weapon_slot"				"melee"
+			"weapon_max_subslot"			"0"
+			// "weapon_min_subslot"			"0"
+			// "class_restricted"			"1"
+			"weapon_cost"				"4"
+		}
+		"weapon_m26a2"
+		{
+			// "weapon_slot"				"primary"
+			// "weapon_slot"				"secondary"
+			"weapon_slot"				"explosive"
+			// "weapon_slot"				"melee"
+			// "weapon_max_subslot"			"0"
+			// "weapon_min_subslot"			"0" 
+			"class_restricted"			"1"
+			"weapon_cost"				"2"
+		}
+		"weapon_gp25_he"
+		{
+			"weapon_slot"				"primary"
+			// "weapon_slot"				"secondary"
+			// "weapon_slot"				"explosive"
+			// "weapon_slot"				"melee"
+			"weapon_max_subslot"			"0"
+			"weapon_min_subslot"			"0"
+			// "class_restricted"			"1"
+			"weapon_cost"				"4"
+		}
+		"weapon_m203_smoke"
+		{
+			"weapon_slot"				"primary"
+			// "weapon_slot"				"secondary"
+			// "weapon_slot"				"explosive"
+			// "weapon_slot"				"melee"
+			"weapon_max_subslot"			"0"
+			"weapon_min_subslot"			"0"
+			// "class_restricted"			"1"
+			"weapon_cost"				"1"
+		}
+		"weapon_gp25_smoke"
+		{
+			"weapon_slot"				"primary"
+			// "weapon_slot"				"secondary"
+			// "weapon_slot"				"explosive"
+			// "weapon_slot"				"melee"
+			"weapon_max_subslot"			"0"
+			"weapon_min_subslot"			"0"
+			// "class_restricted"			"1"
+			"weapon_cost"				"1"
+		}
+		// ========================================
+		// REMOTE CONTROLLED EXPLOSIVES
+		// ========================================
+		"weapon_c4_clicker"
+		{
+			// "weapon_slot"				"primary"
+			// "weapon_slot"				"secondary"
+			"weapon_slot"				"explosive"
+			// "weapon_slot"				"melee"
+			// "weapon_max_subslot"			"0"
+			"weapon_min_subslot"			"3"
+			"class_restricted"			"1"
+			"weapon_cost"				"4"
+		}
+		"weapon_c4_ied"
+		{
+			// "weapon_slot"				"primary"
+			// "weapon_slot"				"secondary"
+			"weapon_slot"				"explosive"
+			// "weapon_slot"				"melee"
+			// "weapon_max_subslot"			"0"
+			"weapon_min_subslot"			"0"
+			"class_restricted"			"1"
+			"weapon_cost"				"4"
+		}
+		// ========================================
+		// GRENADES
+		// ========================================
+		"weapon_m67"
+		{
+			"weapon_slot"				"explosive"
+			"weapon_max_subslot"			"2"
+			// "weapon_min_subslot"			"0"
+			"class_restricted"			"1"
+			"weapon_cost"				"1"
+		}
+		"weapon_f1"
+		{
+			"weapon_slot"				"explosive"
+			"weapon_max_subslot"			"2"
+			// "weapon_min_subslot"			"2"
+			"class_restricted"			"1"
+			"weapon_cost"				"1"
+		}
+		"weapon_anm14"
+		{
+			"weapon_slot"				"explosive"
+			// "weapon_max_subslot"			"0"
+			"weapon_min_subslot"			"1"
+			"class_restricted"			"1"
+			"weapon_cost"				"2"
+		}
+		"weapon_molotov"
+		{
+			"weapon_slot"				"explosive"
+			"weapon_max_subslot"			"0"
+			// "weapon_min_subslot"			"3"
+			"class_restricted"			"1"
+			"weapon_cost"				"2"
+		}
+		"weapon_m18"
+		{
+			"weapon_slot"				"explosive"
+			"weapon_max_subslot"			"2"
+			// "weapon_min_subslot"			"0"
+			"class_restricted"			"1"
+			"weapon_cost"				"1"
+		}
+		"weapon_m84"
+		{
+			"weapon_slot"				"explosive"
+			"weapon_max_subslot"			"0"
+			// "weapon_min_subslot"			"0"
+			"class_restricted"			"1"
+			"weapon_cost"				"5"
+		}
+		// ========================================
+		// CUSTOM EXPLOSIVES
+		// ========================================	
+		"weapon_holy"
+		{
+			"weapon_slot"				"explosive"
+			//	"weapon_max_subslot"			"2"
+			"weapon_min_subslot"			"3"
+			"class_restricted"			"0"
+			"weapon_cost"				"10"
+		}
+		"weapon_geballteladung"
+		{
+			"weapon_slot"				"explosive"
+			// "weapon_max_subslot"			"0"
+			"weapon_min_subslot"			"3"
+			"class_restricted"			"1"
+			"weapon_cost"				"4"
+		}
+		"weapon_m79"
+		{
+			"weapon_slot"				"explosive"
+			// "weapon_max_subslot"			"0"
+			"weapon_min_subslot"			"3"
+			"class_restricted"			"1"
+			"weapon_cost"				"10"
+		}
+		"weapon_m79_smoke"
+		{
+			"weapon_slot"				"explosive"
+			// "weapon_max_subslot"			"0"
+			"weapon_min_subslot"			"3"
+			"class_restricted"			"1"
+			"weapon_cost"				"2"
+		}
+		"weapon_law"
+		{
+			"weapon_slot"				"explosive"
+			// "weapon_max_subslot"			"0"
+			"weapon_min_subslot"			"3"
+			"class_restricted"			"1"
+			"weapon_cost"				"6"
+		}
+		// ========================================
+		// SNIPER RIFLES
+		// ========================================	
+		"weapon_m40a1"
+		{
+			"weapon_slot"				"primary"
+			"weapon_max_subslot"			"0"
+			// "weapon_min_subslot"			"1"
+			"class_restricted"			"1"
+			"weapon_cost"				"0"
+		}
+		"weapon_mosin"
+		{
+			"weapon_slot"				"primary"
+			"weapon_max_subslot"			"0"
+			// "weapon_min_subslot"			"1"
+			"class_restricted"			"1"
+			"weapon_cost"				"0"
+		}
+		// CUSTOM SNIPER AND BOLT ACTION RIFLES
+		"weapon_kar98"
+		{
+			"weapon_slot"				"primary"
+			// "weapon_max_subslot"			"0"
+			"weapon_min_subslot"			"1"
+			"class_restricted"			"1"
+			"weapon_cost"				"4"
+		}
+		"weapon_m82a1"
+		{
+			"weapon_slot"				"primary"
+			// "weapon_max_subslot"			"0"
+			"weapon_min_subslot"			"1"
+			"class_restricted"			"1"
+			"weapon_cost"				"4"
+		}
+		"weapon_enfield"
+		{
+			"weapon_slot"				"primary"
+			// "weapon_max_subslot"			"0"
+			"weapon_min_subslot"			"1"
+			"class_restricted"			"1"
+			"weapon_cost"				"4"
+		}
+		"weapon_remingtonmsr"
+		{
+			"weapon_slot"				"primary"
+			// "weapon_max_subslot"			"0"
+			"weapon_min_subslot"			"1"
+			"class_restricted"			"1"
+			"weapon_cost"				"4"
+		}
+		"weapon_svd"
+		{
+			"weapon_slot"				"primary"
+			// "weapon_max_subslot"			"0"
+			"weapon_min_subslot"			"1"
+			"class_restricted"			"1"
+			"weapon_cost"				"4"
+		}
+		"weapon_gol"
+		{
+			"weapon_slot"				"primary"
+			// "weapon_max_subslot"			"0"
+			"weapon_min_subslot"			"1"
+			"class_restricted"			"1"
+			"weapon_cost"				"4"
+		}
+		// ========================================
+		// LIGHT MACHINE GUNS
+		// ========================================
+		"weapon_m249"
+		{
+			"weapon_slot"				"primary"
+			"weapon_max_subslot"			"0"
+			// "weapon_min_subslot"			"0"
+			"class_restricted"			"1"
+			"weapon_cost"				"0"
+		}
+		"weapon_rpk"
+		{
+			"weapon_slot"				"primary"
+			"weapon_max_subslot"			"0"
+			// "weapon_min_subslot"			"0"
+			"class_restricted"			"1"
+			"weapon_cost"				"0"
+		}
+		// CUSTOM LMG
+		"weapon_m1918bar"
+		{
+			"weapon_slot"				"primary"
+			// "weapon_max_subslot"			"0"
+			"weapon_min_subslot"			"1"
+			"class_restricted"			"1"
+			"weapon_cost"				"4"
+		}
+		"weapon_mk46"
+		{
+			"weapon_slot"				"primary"
+			// "weapon_max_subslot"			"0"
+			"weapon_min_subslot"			"1"
+			"class_restricted"			"1"
+			"weapon_cost"				"4"
+		}
+		"weapon_m60"
+		{
+			"weapon_slot"				"primary"
+			// "weapon_max_subslot"			"0"
+			"weapon_min_subslot"			"1"
+			"class_restricted"			"1"
+			"weapon_cost"				"4"
+		}
+		"weapon_pecheneg"
+		{
+			"weapon_slot"				"primary"
+			// "weapon_max_subslot"			"0"
+			"weapon_min_subslot"			"1"
+			"class_restricted"			"1"
+			"weapon_cost"				"4"
+		}
+		"weapon_m240"
+		{
+			"weapon_slot"				"primary"
+			// "weapon_max_subslot"			"0"
+			"weapon_min_subslot"			"1"
+			"class_restricted"			"1"
+			"weapon_cost"				"4"
+		}
+		"weapon_mg42"
+		{
+			"weapon_slot"				"primary"
+			// "weapon_max_subslot"			"0"
+			"weapon_min_subslot"			"1"
+			"class_restricted"			"1"
+			"weapon_cost"				"4"
+		}
+		"weapon_stoner"
+		{
+			"weapon_slot"				"primary"
+			"weapon_max_subslot"			"0"
+			// "weapon_min_subslot"			"0"
+			"class_restricted"			"1"
+			"weapon_cost"				"0"
+		}
+		"weapon_m1919"
+		{
+			"weapon_slot"				"primary"
+			"weapon_max_subslot"			"0"
+			// "weapon_min_subslot"			"0"
+			"class_restricted"			"1"
+			"weapon_cost"				"0"
+		}
+		// ========================================
+		// ASSAULT RIFLES
+		// ========================================
+		"weapon_m16a4"
+		{
+			"weapon_slot"				"primary"
+			"weapon_max_subslot"			"0"
+			// "weapon_min_subslot"			"0"
+			"class_restricted"			"1"
+			"weapon_cost"				"0"
+		}
+		"weapon_mk18"
+		{
+			"weapon_slot"				"primary"
+			"weapon_max_subslot"			"0"
+			// "weapon_min_subslot"			"0"
+			"class_restricted"			"1"
+			"weapon_cost"				"0"
+		}
+		"weapon_m4a1"
+		{
+			"weapon_slot"				"primary"
+			"weapon_max_subslot"			"0"
+			// "weapon_min_subslot"			"0"
+			"class_restricted"			"1"
+			"weapon_cost"				"0"
+		}
+		"weapon_galil_sar"
+		{
+			"weapon_slot"				"primary"
+			"weapon_max_subslot"			"0"
+			// "weapon_min_subslot"			"0"
+			"class_restricted"			"1"
+			"weapon_cost"				"0"
+		}
+		"weapon_akm"
+		{
+			"weapon_slot"				"primary"
+			"weapon_max_subslot"			"0"
+			// "weapon_min_subslot"			"0"
+			"class_restricted"			"1"
+			"weapon_cost"				"0"
+		}
+		"weapon_ak74"
+		{
+			"weapon_slot"				"primary"
+			"weapon_max_subslot"			"0"
+			// "weapon_min_subslot"			"0"
+			"class_restricted"			"1"
+			"weapon_cost"				"0"
+		}
+		"weapon_fal"
+		{
+			"weapon_slot"				"primary"
+			"weapon_max_subslot"			"0"
+			// "weapon_min_subslot"			"0"
+			"class_restricted"			"1"
+			"weapon_cost"				"0"
+		}
+		"weapon_l1a1"
+		{
+			"weapon_slot"				"primary"
+			"weapon_max_subslot"			"0"
+			// "weapon_min_subslot"			"0"
+			"class_restricted"			"1"
+			"weapon_cost"				"0"
+		}
+		// CUSTOM ASSAULT RIFLES
+		"weapon_mk17"
+		{
+			"weapon_slot"				"primary"
+			// "weapon_max_subslot"			"0"
+			"weapon_min_subslot"			"1"
+			"class_restricted"			"1"
+			"weapon_cost"				"4"
+		}
+		"weapon_l85a2"
+		{
+			"weapon_slot"				"primary"
+			// "weapon_max_subslot"			"0"
+			"weapon_min_subslot"			"1"
+			"class_restricted"			"1"
+			"weapon_cost"				"4"
+		}
+		"weapon_f2000"
+		{
+			"weapon_slot"				"primary"
+			// "weapon_max_subslot"			"0"
+			"weapon_min_subslot"			"1"
+			"class_restricted"			"1"
+			"weapon_cost"				"4"
+		}
+		"weapon_steyraug"
+		{
+			"weapon_slot"				"primary"
+			// "weapon_max_subslot"			"0"
+			"weapon_min_subslot"			"1"
+			"class_restricted"			"1"
+			"weapon_cost"				"4"
+		}
+		"weapon_asval"
+		{
+			"weapon_slot"				"primary"
+			// "weapon_max_subslot"			"0"
+			"weapon_min_subslot"			"1"
+			"class_restricted"			"1"
+			"weapon_cost"				"4"
+		}
+		"weapon_m4a1sopmod"
+		{
+			"weapon_slot"				"primary"
+			// "weapon_max_subslot"			"0"
+			"weapon_min_subslot"			"1"
+			"class_restricted"			"1"
+			"weapon_cost"				"4"
+		}
+		"weapon_sr25"
+		{
+			"weapon_slot"				"primary"
+			// "weapon_max_subslot"			"0"
+			"weapon_min_subslot"			"1"
+			"class_restricted"			"1"
+			"weapon_cost"				"4"
+		}
+		"weapon_mk18_m0"
+		{
+			"weapon_slot"				"primary"
+			// "weapon_max_subslot"			"0"
+			"weapon_min_subslot"			"1"
+			"class_restricted"			"1"
+			"weapon_cost"				"4"
+		}
+		"weapon_cm901"
+		{
+			"weapon_slot"				"primary"
+			// "weapon_max_subslot"			"0"
+			"weapon_min_subslot"			"1"
+			"class_restricted"			"1"
+			"weapon_cost"				"4"
+		}
+		"weapon_stg44"
+		{
+			"weapon_slot"				"primary"
+			// "weapon_max_subslot"			"0"
+			"weapon_min_subslot"			"1"
+			"class_restricted"			"1"
+			"weapon_cost"				"4"
+		}
+		"weapon_hk417"
+		{
+			"weapon_slot"				"primary"
+			// "weapon_max_subslot"			"0"
+			"weapon_min_subslot"			"1"
+			"class_restricted"			"1"
+			"weapon_cost"				"4"
+		}
+		"weapon_honeybadger"
+		{
+			"weapon_slot"				"primary"
+			// "weapon_max_subslot"			"0"
+			"weapon_min_subslot"			"1"
+			"class_restricted"			"1"
+			"weapon_cost"				"4"
+		}
+		"weapon_g33"
+		{
+			"weapon_slot"				"primary"
+			// "weapon_max_subslot"			"0"
+			"weapon_min_subslot"			"1"
+			"class_restricted"			"1"
+			"weapon_cost"				"4"
+		}
+		"weapon_acr"
+		{
+			"weapon_slot"				"primary"
+			// "weapon_max_subslot"			"0"
+			"weapon_min_subslot"			"1"
+			"class_restricted"			"1"
+			"weapon_cost"				"4"
+		}
+		"weapon_g36k"
+		{
+			"weapon_slot"				"primary"
+			// "weapon_max_subslot"			"0"
+			"weapon_min_subslot"			"1"
+			"class_restricted"			"1"
+			"weapon_cost"				"4"
+		}
+		"weapon_hk416d"
+		{
+			"weapon_slot"				"primary"
+			// "weapon_max_subslot"			"0"
+			"weapon_min_subslot"			"1"
+			"class_restricted"			"1"
+			"weapon_cost"				"4"
+		}
+		"weapon_alphaak"
+		{
+			"weapon_slot"				"primary"
+			// "weapon_max_subslot"			"0"
+			"weapon_min_subslot"			"1"
+			"class_restricted"			"1"
+			"weapon_cost"				"4"
+		}
+		// ========================================
+		// SEMI-AUTOMATIC RIFLES AND CARBINES
+		// ========================================
+		"weapon_mini14"
+		{
+			"weapon_slot"				"primary"
+			"weapon_max_subslot"			"0"
+			// "weapon_min_subslot"			"0"
+			"class_restricted"			"1"
+			"weapon_cost"				"0"
+		}
+		"weapon_m14"
+		{
+			"weapon_slot"				"primary"
+			"weapon_max_subslot"			"0"
+			// "weapon_min_subslot"			"0"
+			"class_restricted"			"1"
+			"weapon_cost"				"0"
+		}
+		"weapon_m1a1"
+		{
+			"weapon_slot"				"primary"
+			"weapon_max_subslot"			"0"
+			// "weapon_min_subslot"			"0"
+			"class_restricted"			"1"
+			"weapon_cost"				"0"
+		}
+		"weapon_sks"
+		{
+			"weapon_slot"				"primary"
+			"weapon_max_subslot"			"0"
+			// "weapon_min_subslot"			"0"
+			"class_restricted"			"1"
+			"weapon_cost"				"0"
+		}
+		// CUSTOM SEMI-AUTO RIFLES
+		"weapon_dragunovsvu"
+		{
+			"weapon_slot"				"primary"
+			// "weapon_max_subslot"			"0"
+			"weapon_min_subslot"			"1"
+			"class_restricted"			"1"
+			"weapon_cost"				"4"
+		}
+		"weapon_m1asocom16"
+		{
+			"weapon_slot"				"primary"
+			// "weapon_max_subslot"			"0"
+			"weapon_min_subslot"			"1"
+			"class_restricted"			"1"
+			"weapon_cost"				"4"
+		}
+		"weapon_m1garand"
+		{
+			"weapon_slot"				"primary"
+			// "weapon_max_subslot"			"0"
+			"weapon_min_subslot"			"1"
+			"class_restricted"			"1"
+			"weapon_cost"				"4"
+		}
+		"weapon_m110"
+		{
+			"weapon_slot"				"primary"
+			// "weapon_max_subslot"			"0"
+			"weapon_min_subslot"			"1"
+			"class_restricted"			"1"
+			"weapon_cost"				"4"
+		}
+		"weapon_ace52"
+		{
+			"weapon_slot"				"primary"
+			// "weapon_max_subslot"			"0"
+			"weapon_min_subslot"			"1"
+			"class_restricted"			"1"
+			"weapon_cost"				"4"
+		}
+		// ========================================
+		// SHOTGUNS
+		// ========================================
+		"weapon_m590"
+		{
+			"weapon_slot"				"secondary"
+			// "weapon_max_subslot"			"0"
+			"weapon_min_subslot"			"1"
+			"class_restricted"			"1"
+			"weapon_cost"				"2"
+		}
+		"weapon_toz"
+		{
+			"weapon_slot"				"secondary"
+			// "weapon_max_subslot"			"0"
+			"weapon_min_subslot"			"1"
+			"class_restricted"			"1"
+			"weapon_cost"				"2"
+		}
+		// CUSTOM SHOTGUNS
+		"weapon_saiga12auto"
+		{
+			"weapon_slot"				"secondary"
+			// "weapon_max_subslot"			"0"
+			"weapon_min_subslot"			"1"
+			"class_restricted"			"1"
+			"weapon_cost"				"10"
+		}
+		"weapon_m500"
+		{
+			"weapon_slot"				"secondary"
+			// "weapon_max_subslot"			"0"
+			"weapon_min_subslot"			"1"
+			"class_restricted"			"1"
+			"weapon_cost"				"8"
+		}
+		"weapon_nova"
+		{
+			"weapon_slot"				"secondary"
+			// "weapon_max_subslot"			"0"
+			"weapon_min_subslot"			"1"
+			"class_restricted"			"1"
+			"weapon_cost"				"8"
+		}
+		"weapon_ksg"
+		{
+			"weapon_slot"				"secondary"
+			// "weapon_max_subslot"			"0"
+			"weapon_min_subslot"			"1"
+			"class_restricted"			"1"
+			"weapon_cost"				"10"
+		}
+		// ========================================
+		// SUB-MACHINE GUNS
+		// ========================================
+		"weapon_mp5"
+		{
+			"weapon_slot"				"secondary"
+			// "weapon_max_subslot"			"0"
+			"weapon_min_subslot"			"1"
+			"class_restricted"			"1"
+			"weapon_cost"				"1"
+		}
+		"weapon_mp40"
+		{
+			"weapon_slot"				"secondary"
+			// "weapon_max_subslot"			"0"
+			"weapon_min_subslot"			"1"
+			"class_restricted"			"1"
+			"weapon_cost"				"1"
+		}
+		"weapon_sterling"
+		{
+			"weapon_slot"				"secondary"
+			// "weapon_max_subslot"			"0"
+			"weapon_min_subslot"			"1"
+			"class_restricted"			"1"
+			"weapon_cost"				"1"
+		}
+		"weapon_ump45"
+		{
+			"weapon_slot"				"secondary"
+			// "weapon_max_subslot"			"0"
+			"weapon_min_subslot"			"1"
+			"class_restricted"			"1"
+			"weapon_cost"				"1"
+		}
+		"weapon_aks74u"
+		{
+			"weapon_slot"				"secondary"
+			// "weapon_max_subslot"			"0"
+			"weapon_min_subslot"			"1"
+			"class_restricted"			"1"
+			"weapon_cost"				"1"
+		}
+		// CUSTOM SUBMACHINE GUNS
+		"weapon_sten"
+		{
+			"weapon_slot"				"secondary"
+			// "weapon_max_subslot"			"0"
+			"weapon_min_subslot"			"1"
+			"class_restricted"			"1"
+			"weapon_cost"				"3"
+		}
+		"weapon_p90"
+		{
+			"weapon_slot"				"secondary"
+			// "weapon_max_subslot"			"0"
+			"weapon_min_subslot"			"1"
+			"class_restricted"			"1"
+			"weapon_cost"				"3"
+		}
+		"weapon_spectre"
+		{
+			"weapon_slot"				"secondary"
+			// "weapon_max_subslot"			"0"
+			"weapon_min_subslot"			"1"
+			"class_restricted"			"1"
+			"weapon_cost"				"3"
+		}
+		"weapon_krissvector"
+		{
+			"weapon_slot"				"secondary"
+			// "weapon_max_subslot"			"0"
+			"weapon_min_subslot"			"1"
+			"class_restricted"			"1"
+			"weapon_cost"				"3"
+		}
+		"weapon_ppsh41"
+		{
+			"weapon_slot"				"secondary"
+			// "weapon_max_subslot"			"0"
+			"weapon_min_subslot"			"1"
+			"class_restricted"			"1"
+			"weapon_cost"				"3"
+		}
+		"weapon_thompson"
+		{
+			"weapon_slot"				"secondary"
+			// "weapon_max_subslot"			"0"
+			"weapon_min_subslot"			"1"
+			"class_restricted"			"1"
+			"weapon_cost"				"3"
+		}
+		"weapon_ots33"
+		{
+			"weapon_slot"				"secondary"
+			// "weapon_max_subslot"			"0"
+			"weapon_min_subslot"			"1"
+			"class_restricted"			"1"
+			"weapon_cost"				"3"
+		}
+		"weapon_mp7"
+		{
+			"weapon_slot"				"secondary"
+			// "weapon_max_subslot"			"0"
+			"weapon_min_subslot"			"1"
+			"class_restricted"			"1"
+			"weapon_cost"				"3"
+		}
+		"weapon_uzi"
+		{
+			"weapon_slot"				"secondary"
+			// "weapon_max_subslot"			"0"
+			"weapon_min_subslot"			"1"
+			"class_restricted"			"1"
+			"weapon_cost"				"3"
+		}
+		"weapon_colt9mm"
+		{
+			"weapon_slot"				"secondary"
+			// "weapon_max_subslot"			"0"
+			"weapon_min_subslot"			"1"
+			"class_restricted"			"1"
+			"weapon_cost"				"3"
+		}
+		// ========================================
+		// PISTOLS
+		// ========================================	
+		"weapon_m9"
+		{
+			"weapon_slot"				"secondary"
+			"weapon_max_subslot"			"1"
+			// "weapon_min_subslot"			"1"
+			"class_restricted"			"1"
+			"weapon_cost"				"0"
+		}
+		"weapon_makarov"
+		{
+			"weapon_slot"				"secondary"
+			"weapon_max_subslot"			"1"
+			// "weapon_min_subslot"			"1"
+			"class_restricted"			"1"
+			"weapon_cost"				"0"
+		}
+		// CUSTOM PISTOLS
+		"weapon_mp443"
+		{
+			"weapon_slot"				"secondary"
+			"weapon_max_subslot"			"1"
+			// "weapon_min_subslot"			"1"
+			"class_restricted"			"1"
+			"weapon_cost"				"0"
+		}
+		"weapon_m45seriespistol"
+		{
+			"weapon_slot"				"secondary"
+			"weapon_max_subslot"			"1"
+			// "weapon_min_subslot"			"1"
+			"class_restricted"			"1"
+			"weapon_cost"				"0"
+		}
+		"weapon_m1911seriespistol"
+		{
+			"weapon_slot"				"secondary"
+			"weapon_max_subslot"			"1"
+			// "weapon_min_subslot"			"1"
+			"class_restricted"			"1"
+			"weapon_cost"				"0"
+		}
+		"weapon_sigp220"
+		{
+			"weapon_slot"				"secondary"
+			"weapon_max_subslot"			"1"
+			// "weapon_min_subslot"			"1"
+			"class_restricted"			"1"
+			"weapon_cost"				"0"
+		}
+		"weapon_beretta93r"
+		{
+			"weapon_slot"				"secondary"
+			"weapon_max_subslot"			"1"
+			// "weapon_min_subslot"			"1"
+			"class_restricted"			"1"
+			"weapon_cost"				"0"
+		}
+		"weapon_combatcommander"
+		{
+			"weapon_slot"				"secondary"
+			"weapon_max_subslot"			"1"
+			// "weapon_min_subslot"			"1"
+			"class_restricted"			"1"
+			"weapon_cost"				"0"
+		}
+		"weapon_glock33"
+		{
+			"weapon_slot"				"secondary"
+			"weapon_max_subslot"			"1"
+			// "weapon_min_subslot"			"1"
+			"class_restricted"			"1"
+			"weapon_cost"				"0"
+		}
+		"weapon_fiveseven"
+		{
+			"weapon_slot"				"secondary"
+			"weapon_max_subslot"			"1"
+			// "weapon_min_subslot"			"1"
+			"class_restricted"			"1"
+			"weapon_cost"				"0"
+		}
+		"weapon_cobra"
+		{
+			"weapon_slot"				"secondary"
+			"weapon_max_subslot"			"1"
+			// "weapon_min_subslot"			"1"
+			"class_restricted"			"1"
+			"weapon_cost"				"0"
+		}
+		"weapon_deagle"
+		{
+			"weapon_slot"				"secondary"
+			"weapon_max_subslot"			"1"
+			// "weapon_min_subslot"			"1"
+			"class_restricted"			"1"
+			"weapon_cost"				"0"
+		}
+		"weapon_glock18"
+		{
+			"weapon_slot"				"secondary"
+			"weapon_max_subslot"			"1"
+			// "weapon_min_subslot"			"1"
+			"class_restricted"			"1"
+			"weapon_cost"				"0"
+		}
+		"weapon_glock17"
+		{
+			"weapon_slot"				"secondary"
+			"weapon_max_subslot"			"1"
+			// "weapon_min_subslot"			"1"
+			"class_restricted"			"1"
+			"weapon_cost"				"0"
+		}
+		"weapon_hkusp"
+		{
+			"weapon_slot"				"secondary"
+			"weapon_max_subslot"			"1"
+			// "weapon_min_subslot"			"1"
+			"class_restricted"			"1"
+			"weapon_cost"				"0"
+		}
+		// ========================================
+		// CUSTOM ADD WEAPONS
+		// ========================================
+	}
+}

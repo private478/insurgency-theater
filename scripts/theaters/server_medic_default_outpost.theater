@@ -1,0 +1,115 @@
+"#base" "server_medic_default_coop_shared.theater"
+"theater"
+{
+	"teams"
+	{
+		"security"
+		{
+			"squads"
+			{
+				"#Assault_Squad"	// assault squad
+				{
+					// "#Squad_Fireteam_Combat_Medic"			"template_Combat_Medic_security_coop"
+					// "#Squad_Fireteam_Combat_Medic"			"template_Combat_Medic_security_coop"
+					// "#Squad_Fireteam_Combat_Medic"			"template_Combat_Medic_security_coop"
+					"#Squad_Fireteam_infantryman"			"template_infantryman_coop"
+					"#Squad_Fireteam_infantryman"			"template_infantryman_coop"
+					"#Squad_Fireteam_infantryman"			"template_infantryman_coop"
+					"#Squad_Fireteam_infantryman"			"template_infantryman_coop"
+				}"#Assault_Squad"	// assault squad
+				{
+					"#Squad_Fireteam_Designated_Marksman"	"template_designated_marksman_security_coop"
+					"#Squad_Fireteam_Designated_Marksman"	"template_designated_marksman_security_coop"
+				}
+				"#Assault_Squad"	// assault squad
+				{
+					"#Squad_Fireteam_Support"				"template_support_security_coop"
+					"#Squad_Fireteam_Support"				"template_support_security_coop"
+				}
+				"#Assault_Squad"	// assault squad
+				{
+					"#Squad_Fireteam_Meat_Shield"			"template_Meat_Shield_security_coop"
+					"#Squad_Fireteam_Meat_Shield"			"template_Meat_Shield_security_coop"
+				}
+			}
+		}
+		"insurgents"
+		{
+			"squads"
+			{
+				"#Cell_Alpha"	// assault team #1
+				{
+					// role name								preset
+					"#Squad_Cell_Sapper"					"template_coop_sapper"	// RPG
+					"#Squad_Cell_suicide_bomber"			"template_coop_suicide_bomber"	// suicide_bomber
+					"#Squad_Cell_suicide_bomber"			"template_coop_suicide_bomber"	// suicide_bomber
+					"#Squad_Cell_suicide_bomber"			"template_coop_suicide_bomber"	// suicide_bomber
+					"#Squad_Cell_suicide_bomber"			"template_coop_suicide_bomber"	// suicide_bomber
+					"#Squad_Cell_suicide_bomber"			"template_coop_suicide_bomber"	// suicide_bomber
+					"#Squad_Cell_suicide_bomber"			"template_coop_suicide_bomber"	// suicide_bomber
+					"#Squad_Cell_suicide_bomber"			"template_coop_suicide_bomber"	// suicide_bomber
+				}
+				"#Cell_Bravo"	// assault team #2
+				{
+					// role name								preset
+					"#Squad_Cell_Sapper"					"template_coop_sapper"	// RPG
+					"#Squad_Cell_Sapper"					"template_coop_sapper"	// RPG
+					"#Squad_Cell_suicide_bomber"			"template_coop_suicide_bomber"	// suicide_bomber
+					"#Squad_Cell_suicide_bomber"			"template_coop_suicide_bomber"	// suicide_bomber
+					"#Squad_Cell_suicide_bomber"			"template_coop_suicide_bomber"	// suicide_bomber
+					"#Squad_Cell_suicide_bomber"			"template_coop_suicide_bomber"	// suicide_bomber
+					"#Squad_Cell_suicide_bomber"			"template_coop_suicide_bomber"	// suicide_bomber
+					"#Squad_Cell_suicide_bomber"			"template_coop_suicide_bomber"	// suicide_bomber
+				}
+				"#Cell_Charlie"	// support team
+				{
+					// role name								preset
+					"#Squad_Cell_suicide_bomber"			"template_coop_suicide_bomber"	// suicide_bomber
+					"#Squad_Cell_suicide_bomber"			"template_coop_suicide_bomber"	// suicide_bomber
+					"#Squad_Cell_suicide_bomber"			"template_coop_suicide_bomber"	// suicide_bomber
+					"#Squad_Cell_suicide_bomber"			"template_coop_suicide_bomber"	// suicide_bomber
+					"#Squad_Cell_suicide_bomber"			"template_coop_suicide_bomber"	// suicide_bomber
+					"#Squad_Cell_suicide_bomber"			"template_coop_suicide_bomber"	// suicide_bomber
+					"#Squad_Cell_suicide_bomber"			"template_coop_suicide_bomber"	// suicide_bomber
+					"#Squad_Cell_suicide_bomber"			"template_coop_suicide_bomber"	// suicide_bomber
+				}
+				"#Cell_Delta"	// heavy weapons team
+				{
+					// role name								preset
+					"#Squad_Cell_Sapper"					"template_coop_sapper"	// RPG
+					"#Squad_Cell_Sapper"					"template_coop_sapper"	// RPG
+					"#Squad_Cell_Sapper"					"template_coop_sapper"	// RPG
+					"#Squad_Cell_suicide_bomber"			"template_coop_suicide_bomber"	// suicide_bomber
+					"#Squad_Cell_suicide_bomber"			"template_coop_suicide_bomber"	// suicide_bomber
+					"#Squad_Cell_suicide_bomber"			"template_coop_suicide_bomber"	// suicide_bomber
+					"#Squad_Cell_suicide_bomber"			"template_coop_suicide_bomber"	// suicide_bomber
+					"#Squad_Cell_suicide_bomber"			"template_coop_suicide_bomber"	// suicide_bomber
+				}
+				"#Cell_Echo"
+				{
+					// role name								preset
+					"#Squad_Cell_Sapper"					"template_coop_sapper"	// RPG
+					"#Squad_Cell_Sapper"					"template_coop_sapper"	// RPG
+					"#Squad_Cell_Sapper"					"template_coop_sapper"	// RPG
+					"#Squad_Cell_Sapper"					"template_coop_sapper"	// RPG
+					"#Squad_Cell_suicide_bomber"			"template_coop_suicide_bomber"	// suicide_bomber
+					"#Squad_Cell_suicide_bomber"			"template_coop_suicide_bomber"	// suicide_bomber
+					"#Squad_Cell_suicide_bomber"			"template_coop_suicide_bomber"	// suicide_bomber
+					"#Squad_Cell_suicide_bomber"			"template_coop_suicide_bomber"	// suicide_bomber
+				}
+				"#Cell_Foxtrot"
+				{
+					// role name								preset
+					"#Squad_Cell_Sapper"					"template_coop_sapper"	// RPG
+					"#Squad_Cell_suicide_bomber"			"template_coop_suicide_bomber"	// suicide_bomber
+					"#Squad_Cell_suicide_bomber"			"template_coop_suicide_bomber"	// suicide_bomber
+					"#Squad_Cell_suicide_bomber"			"template_coop_suicide_bomber"	// suicide_bomber
+					"#Squad_Cell_suicide_bomber"			"template_coop_suicide_bomber"	// suicide_bomber
+					"#Squad_Cell_suicide_bomber"			"template_coop_suicide_bomber"	// suicide_bomber
+					"#Squad_Cell_suicide_bomber"			"template_coop_suicide_bomber"	// suicide_bomber
+					"#Squad_Cell_suicide_bomber"			"template_coop_suicide_bomber"	// suicide_bomber
+				}
+			}
+		}
+	}
+}
